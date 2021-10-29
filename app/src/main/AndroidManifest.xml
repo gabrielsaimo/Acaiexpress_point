@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.exampl.gs.acaiexpress">
+
+    <uses-feature android:name="android.hardware.location.gps" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo_branco"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logo_branco_round"
+        android:supportsRtl="true"
+        android:hardwareAccelerated="false"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name="com.exampl.gs.acaiexpress.ReseteSenha"
+            />
+        <activity android:name="com.exampl.gs.acaiexpress.Cadastro"
+            />
+        <activity android:name="com.exampl.gs.acaiexpress.ui.main.Dados2"
+            />
+        <activity android:name="com.exampl.gs.acaiexpress.ui.main.Dados"
+            />
+        <activity android:name="com.exampl.gs.acaiexpress.MainActivity"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+    </application>
+
+</manifest>

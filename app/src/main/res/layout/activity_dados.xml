@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.Dados">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:textColor="#FFFFFF"
+        android:background="@color/color4"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/PontNomeXML"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/color4"
+        android:layout_gravity="center"
+        android:autoSizeTextType="uniform"
+        android:gravity="center"
+        android:text="Editar Inforações"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+    <Button
+        android:id="@+id/btnVoltar"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="-40dp"
+        android:background="@drawable/voltar_foreground">
+
+    </Button>
+    <View
+        android:id="@+id/divider1"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="?android:attr/listDivider" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="288dp"
+                android:layout_gravity="center"
+                android:background="@mipmap/sem_imagem"
+                android:scaleType="fitXY" />
+
+            <Button
+                android:id="@+id/ediimg"
+                android:layout_width="85dp"
+                android:layout_height="35dp"
+                android:layout_gravity="end"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="-50dp"
+                android:backgroundTint="@color/color4"
+                android:background="@drawable/btntras"
+                android:drawableStart="@drawable/ic_action_edite"
+                android:text="@string/edit"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_height="5dp"
+                android:background="?android:attr/listDivider" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:text="Nome:"
+                android:textSize="28sp">
+            </TextView>
+
+            <EditText
+                android:id="@+id/editNponto"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:autoSizeTextType="uniform"
+                android:ems="10"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:hint="@string/text_nonelocal"
+                android:inputType="textPersonName"
+                android:textSize="36sp"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <View
+                android:id="@+id/divider2"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="?android:attr/listDivider" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:text="Preço:">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="135dp"
+                android:text="R$:"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="-60dp">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/editPreso"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:ems="10"
+                android:hint="@string/textpreco"
+                android:inputType="number"
+                android:textSize="36sp"
+                app:layout_constraintVertical_bias="0.575" />
+
+            <View
+                android:id="@+id/divider3"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="?android:attr/listDivider" />
+
+            <Button
+                android:id="@+id/abertoBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:background="@color/color_error"
+                android:text="@string/aberto"
+                app:layout_constraintVertical_bias="0.848" />
+
+
+            <ImageView
+                android:id="@+id/imgbandeira"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="210dp"
+                android:layout_marginTop="-90dp"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <Button
+                android:id="@+id/btSalvar"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/btn1"
+                android:text="@string/salvea"
+                android:textAllCaps="false"
+                android:backgroundTint="@color/color4"
+                android:textColor="#FFFFFF"
+                app:layout_constraintVertical_bias="0.943" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
